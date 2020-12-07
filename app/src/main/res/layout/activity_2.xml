@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greenendcolor"
+    tools:context=".Activity2">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Information"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="40sp">
+
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/two"
+        android:layout_below="@id/tv1"
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/in1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_weight="1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Cereal Weight"
+        android:textColor="#6638e2"
+        android:textSize="37sp" />
+
+        <EditText
+            style="@style/MyEditTextStyle"
+            android:id="@+id/v1"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:hint="Weight"
+            android:inputType=""
+            android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/in2"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_weight="1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Cereal Volume"
+                android:textColor="#6638e2"
+                android:textSize="37sp" />
+
+            <EditText
+                style="@style/MyEditTextStyle"
+                android:id="@+id/v2"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:hint="Volume"
+                android:inputType=""
+                android:text="" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_below="@id/two"
+        android:background="@drawable/btn"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:textSize="35sp"
+        android:text="Next">
+
+    </Button>
+
+
+</RelativeLayout>
